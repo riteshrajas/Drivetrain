@@ -73,7 +73,7 @@ public class RobotContainer {
     }
     drivetrain.registerTelemetry(logger::telemeterize);
 
-    //joystick.x().toggleOnFalse((DriveForwardForTime(drivetrain, 5)));
+    joystick.x().toggleOnFalse((new DriveForwardForTime(drivetrain, 5)));
   }
 
   public RobotContainer() {

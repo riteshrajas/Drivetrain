@@ -27,6 +27,6 @@ public class DriveForwardForTime extends SequentialCommandGroup {
 										() -> forwardStraight
 												.withVelocityX(0.1)
 												.withVelocityY(0)))
-								.andThen(new ParallelDeadlineGroup(new WaitCommand(5), swerve.applyRequest(() -> brake))));
+								.andThen(new ParallelDeadlineGroup(new WaitCommand(0), swerve.applyRequest(() -> brake))));
 		}
 }
